@@ -1,0 +1,105 @@
+[gd_scene format=3 uid="uid://dqgfiflmmja3p"]
+
+[ext_resource type="PackedScene" uid="uid://crftfcd15701v" path="res://Scene/floor_grid_template.tscn" id="1_3vc68"]
+[ext_resource type="PackedScene" uid="uid://d0ee76j6p5m5l" path="res://Scene/player.tscn" id="2_2142r"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_2142r"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_3vc68"]
+sky_material = SubResource("ProceduralSkyMaterial_2142r")
+
+[sub_resource type="Environment" id="Environment_njlop"]
+background_mode = 2
+sky = SubResource("Sky_3vc68")
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="Node3D" type="Node3D" unique_id=1020383256]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=565823831]
+environment = SubResource("Environment_njlop")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1272499460]
+transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="FloorGrid" parent="." unique_id=1524165972 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 0.5)
+
+[node name="FloorGrid2" parent="." unique_id=551754763 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.5, 0.5)
+
+[node name="FloorGrid3" parent="." unique_id=282571014 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.5, 0.5)
+
+[node name="FloorGrid4" parent="." unique_id=311159465 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, 0.5)
+
+[node name="FloorGrid5" parent="." unique_id=1307536944 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.5, 0.5)
+
+[node name="FloorGrid6" parent="." unique_id=1566027152 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, -0.5)
+
+[node name="FloorGrid7" parent="." unique_id=2101855587 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 1.5)
+
+[node name="FloorGrid8" parent="." unique_id=919906210 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, -1.5)
+
+[node name="FloorGrid9" parent="." unique_id=366376726 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, -0.5)
+
+[node name="FloorGrid23" parent="." unique_id=417184715 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, -1.5)
+
+[node name="FloorGrid10" parent="." unique_id=820365423 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, -1.5)
+
+[node name="FloorGrid11" parent="." unique_id=1694645171 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, -1.5)
+
+[node name="FloorGrid12" parent="." unique_id=547785510 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, -0.5)
+
+[node name="FloorGrid13" parent="." unique_id=1100696575 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 0.5)
+
+[node name="FloorGrid14" parent="." unique_id=257041989 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 1.5)
+
+[node name="FloorGrid15" parent="." unique_id=1448086771 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0.5, 2.5)
+
+[node name="FloorGrid16" parent="." unique_id=24015260 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0.5, 2.5)
+
+[node name="FloorGrid17" parent="." unique_id=1698796147 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.5, 2.5)
+
+[node name="FloorGrid18" parent="." unique_id=593086683 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0.5, 2.5)
+
+[node name="FloorGrid19" parent="." unique_id=955178851 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, 0.5, 2.5)
+
+[node name="FloorGrid20" parent="." unique_id=1500723246 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0.5, 2.5)
+
+[node name="FloorGrid21" parent="." unique_id=1458559741 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, 2.5)
+
+[node name="FloorGrid22" parent="." unique_id=489157214 instance=ExtResource("1_3vc68")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0.5, 3.5)
+type_floor = 2
+
+[node name="Player" parent="." unique_id=596059852 instance=ExtResource("2_2142r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 1, 0.5)
+
+[node name="CameraControl" type="Node3D" parent="." unique_id=528252271]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 2, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="CameraControl" unique_id=1202884762]
+transform = Transform3D(1, 0, 0, 0, 0.8660254, 0.5, 0, -0.5, 0.8660254, 0, 4, 5)

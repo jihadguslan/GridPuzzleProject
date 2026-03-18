@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://crftfcd15701v"]
+
+[ext_resource type="Script" uid="uid://bhl7bi70ywr6t" path="res://Script/Floor/floor_grid.gd" id="1_rk7p8"]
+[ext_resource type="Texture2D" uid="uid://dp3yklsr66add" path="res://icon.svg" id="2_ie0e8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gx810"]
+albedo_texture = ExtResource("2_ie0e8")
+uv1_scale = Vector3(2.025, 2.025, 2.025)
+uv1_offset = Vector3(-0.515, 0, 0)
+
+[sub_resource type="BoxMesh" id="BoxMesh_47f3y"]
+material = SubResource("StandardMaterial3D_gx810")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_q5inl"]
+
+[node name="FloorGrid" type="StaticBody3D" unique_id=1524165972]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_rk7p8")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1593065680]
+mesh = SubResource("BoxMesh_47f3y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1049226477]
+shape = SubResource("BoxShape3D_q5inl")
+
+[node name="MidPoint" type="Marker3D" parent="." unique_id=864553395]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
